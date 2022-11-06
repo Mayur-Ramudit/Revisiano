@@ -50,32 +50,27 @@
     cursor: pointer;
 }
 
-.middle {
+.center {
+    position: relative;
+    height: 70px;
+    top: 30px;
+    
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
+.boxes {
+    display: grid;
+    position: relative;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 .box {
-    display: grid;
     position: absolute;
-    grid-template-rows: 2fr 1fr;
+    left: 0;
+    right: 0;
 
-    height: 250px;
-    width: 350px;
+    height: 200px;
 
-    top: 50px;
-    left: 30px;
-}
-
-.top-box {
-    background-color: #ff8a15;
-}
-
-.bottom-box {
-    background-color: rgb(255, 255, 255);
-
-    border-style: solid;
-    border-color: rgb(148, 148, 148);
-    border-width: 1px;
+    background-color: blue;
 }
