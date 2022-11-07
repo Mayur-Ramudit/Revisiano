@@ -59,6 +59,26 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+@media (max-width: 750px) {
+    .center {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .box {
+        height: 50px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .center {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .box {
+        height: 700px;
+    }
+}
+
 .boxes {
     position: relative;
     margin-left: 5px;
@@ -72,7 +92,7 @@
     left: 0;
     right: 0;
 
-    height: 200px;
+    height: 400px;
 }
 
 .top-box {
